@@ -79,7 +79,7 @@ function TimetableUpdateProc(room, rows)
 {
   var year = rows[0][0];
   var month = rows[1][0];
-  var intervals = ["10:00:00", "13:00:00", "16:00:00", "19:00:00", "22:00:00", "25:00:00"];
+  var intervals = ["09:00:00", "12:00:00", "15:00:00", "18:00:00", "21:00:00", "24:00:00"];
   for(var i=0; i<(intervals.length-1); i++)
   {
     RowUpdProc(room, rows[i+2], intervals[i], intervals[i+1], year, month);
